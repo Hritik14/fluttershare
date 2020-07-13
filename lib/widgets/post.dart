@@ -168,7 +168,7 @@ class _PostState extends State<Post> {
         "type": "like",
         "username": currentUser.username,
         "userId": currentUser.id,
-        "userProfileImage": currentUser.photoUrl,
+        "userProfileImg": currentUser.photoUrl,
         "postId": postId,
         "mediaUrl": mediaUrl,
         "timestamp": timeStamp,

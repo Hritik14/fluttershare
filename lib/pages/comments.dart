@@ -66,7 +66,7 @@ class CommentsState extends State<Comments> {
         "commentData": commentController.text,
         "username": currentUser.username,
         "userId": currentUser.id,
-        "userProfileImage": currentUser.photoUrl,
+        "userProfileImg": currentUser.photoUrl,
         "postId": postId,
         "mediaUrl": postMediaUrl,
         "timestamp": timeStamp,
