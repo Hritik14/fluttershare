@@ -1,6 +1,13 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'pages/home.dart';
 
 void main() {
+//  Firestore.instance.settings(timestampsInSnapshotsEnabled: true).then((_) {
+//    print('timestamp enabled in snapshots\n');
+//  }, onError: (_) {
+//    print('error enabling timestamp in snapshots\n');
+//  });
   runApp(MyApp());
 }
 
@@ -10,7 +17,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'FlutterShare',
       debugShowCheckedModeBanner: false,
-      home: Text("Hello World"),
+      theme: ThemeData(
+        primarySwatch: Colors.deepPurple,
+        accentColor: Colors.teal,
+      ),
+      home: Home(),
     );
   }
 }
